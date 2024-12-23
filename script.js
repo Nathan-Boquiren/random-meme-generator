@@ -3,6 +3,9 @@ let cl = console.log;
 const generateMemeBtn = document.getElementById("generate-meme-btn");
 const memeContainer = document.getElementById("meme-container");
 
+document
+  .getElementById("generate-meme-btn")
+  .addEventListener("click", fetchMemeInfo);
 let memes = [];
 function fetchMemeInfo() {
   fetch("https://meme-api.com/gimme/programminghumor")
