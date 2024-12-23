@@ -47,6 +47,27 @@ main#app {
     margin-bottom: 50px;
 }
 
+button {
+    padding: 20px 15px;
+    border: none;
+    border-radius: 100vmax;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    color: yellow;
+    outline: 2px solid yellow;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: yellow;
+    color: var(--darkGreyBg);
+    transform: scale(1.05);
+}
+
 .image-card {
     background-color: rgb(59, 59, 59);
     padding: 10px;
@@ -69,6 +90,10 @@ main#app {
 }
 
 @media (max-width: 500px) {
+    button {
+        display: none;
+    }
+
     header h1 {
         font-size: 2rem;
     }
